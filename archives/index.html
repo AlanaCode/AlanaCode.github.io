@@ -258,10 +258,25 @@
   
 
 
-  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"W29SNz2jdHBRaF7eR3rhbhoz-gzGzoHsz","app_key":"7KYI88GyOPbNonLBRPBndNCf","server_url":null,"security":true}</script>
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"W29SNz2jdHBRaF7eR3rhbhoz-gzGzoHsz","app_key":"7KYI88GyOPbNonLBRPBndNCf","server_url":"https://alanacode.github.io/","security":true}</script>
   <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
+
+
+<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"W29SNz2jdHBRaF7eR3rhbhoz-gzGzoHsz","appKey":"7KYI88GyOPbNonLBRPBndNCf","serverURLs":"https://alanacode.github.io/","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":[],"el":"#valine-comments","path":"/archives/"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.valine.el)
+    .then(() => NexT.utils.getScript(
+      'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+      { condition: window.Valine }
+    ))
+    .then(() => {
+      new Valine(CONFIG.valine);
+    });
+});
+</script>
 
 </body>
 </html>
