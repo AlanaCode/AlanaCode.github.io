@@ -1138,8 +1138,8 @@ pre code {
   padding-top: 0;
 }
 .headband {
-  background: var(--theme-color);
-  height: 3px;
+  background: #222;
+  height: 2px;
 }
 @media (max-width: 991px) {
   .headband {
@@ -1332,6 +1332,7 @@ pre code {
   border: 1px solid #eee;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
 }
 .site-author-name {
   color: var(--text-color);
@@ -2616,7 +2617,7 @@ ul.breadcrumb li:last-child {
   display: none;
 }
 .sidebar-inner {
-  background: var(--content-bg-color);
+  background: url("/images/sidebar.jpg");
   border-radius: initial;
   box-shadow: initial;
   box-sizing: border-box;
